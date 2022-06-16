@@ -81,21 +81,20 @@ class GetPdfText:
 
 
 if __name__ == '__main__':
-    from doc_miner.common_modules.common import *
 
     # resources 경로가져오기
     fm = 'pdf'
-    path = os.getcwd()
-    rsc_path = OperatingSystem.get_parent_path(path)
-    sample_path = os.path.join(rsc_path, 'resources/sample_doc')
-    docx_files = OperatingSystem.sperate_file_extension(check_dir=sample_path)[fm]
-
-    # .docx text 파싱
-    sample_docx_filename = docx_files[0]
-    ins_pdf = GetPdfText(filepath=sample_path, filename=sample_docx_filename)
-
-    res_list = ins_pdf.get_text_pdf_main_list()
-    print(res_list)
-
-    res_str = ins_pdf.get_text_pdf_main_str()
-    print(res_str)
+    # path = os.getcwd()
+    # rsc_path = OperatingSystem.get_parent_path(path)
+    # sample_path = os.path.join(rsc_path, 'resources/sample_doc')
+    # docx_files = OperatingSystem.sperate_file_extension(check_dir=sample_path)[fm]
+    #
+    # # .docx text 파싱
+    # sample_docx_filename = docx_files[0]
+    # ins_pdf = GetPdfText(filepath=sample_path, filename=sample_docx_filename)
+    #
+    # res_list = ins_pdf.get_text_pdf_main_list()
+    # print(res_list)
+    #
+    # res_str = ins_pdf.get_text_pdf_main_str()
+    # print(res_str)

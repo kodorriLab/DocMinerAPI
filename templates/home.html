@@ -28,15 +28,19 @@
 
             <!-- HEADER -->
             <li class="item">
-                <span class="anim-txt anim-text-flow">DaLap API</span>
+                <span class="anim-txt anim-text-flow">DocMiner API</span>
             </li>
         </ul>
         <!-- 서비스리스트 -->
         <ul id="sm-body" class="ui vertical inverted sticky menu">
             <ul class="menu">
                 <li class="item">
-                    <div class="item-ttl">docminer_test</a></div>
+                    <div class="item-ttl">api_docminer</a></div>
                     <div class="item-href">{% url 'docminerview' %}</div>
+                </li>
+                <li class="item">
+                    <div class="item-ttl">api_database</a></div>
+                    <div class="item-href">{% url 'hdfsview' %}</div>
                 </li>
             </ul>
         </ul>

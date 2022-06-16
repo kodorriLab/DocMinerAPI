@@ -1,0 +1,14 @@
+# temporary files
+*.log
+*.pot
+*.pyc
+*.txt
+*.sqlite3
+
+# temporary files dir
+logs/
+.idea/
+sample_doc/
+__pycache__/
+
+

@@ -15,7 +15,11 @@ from api_docminer.modules.parsing_modules.get_text_from_pdf import *
 from api_docminer.modules.parsing_modules.get_text_from_docx import *
 from api_docminer.modules.parsing_modules.get_text_from_hwp import *
 from api_docminer.modules.parsing_modules.get_text_from_pptx import *
+from api_database.modules.LOCAL.local_data_process import *
 
+import logging
+
+log = logging.getLogger(__name__)
 
 class DocMinerService:
 
@@ -87,3 +91,4 @@ class DocMinerService:
     def get_text_from_pptx_with_filename(self):
         res = self.ins_pptx.get_text_pptx_main_with_filename()
         return res
+
