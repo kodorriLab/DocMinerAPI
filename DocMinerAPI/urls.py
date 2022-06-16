@@ -1,3 +1,20 @@
+#-*- coding: utf-8 -*-
+'''
+*******************************************************************************
+ * All rights reserved.
+ * -----------------------------------------------------------------------------
+ * @fileName : urls.py
+ * @author   : "Ko Sun Ho"
+ * @date     : 2022. 06. 16.
+ * @comment  : DocMinerAPI 장고 프레임워크 REST API URL 경로 설정
+ *
+ * @revision history
+ * date            author         comment
+ * ----------      ---------      ----------------------------------------------
+ * 2022. 06. 16.  Ko Sun Ho    최초 작성
+ *******************************************************************************
+'''
+
 from django.urls import path, include
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
