@@ -18,6 +18,7 @@
 from api_sharing.operation_system.common import *
 from api_docminer.modules.service_modules.docminer_service import *
 from api_database.modules.LOCAL.local_data_process import *
+from api_database.modules.HDFS.hdfs_data_process import *
 import json
 import logging
 
@@ -73,7 +74,15 @@ def get_data_from_doc(params):
                 raise Exception('please check file format')
 
             if output == 'hadoop':
-                pass
+                ins_hdfs = HDFS()
+                write_res = ins_hdfs.write_data_hdfs_txt_main(data_li=res,format_=format_)
+                if write_res[0] == 'success':
+                   res_dic[write_res[1]] = write_res[2] 
+                elif write_res[0] == 'error':
+                   res_dic[write_res[1]] = write_res[2]
+                else:
+                   raise Exception('pleace check status')
+
             elif output == 'local':
                 ins_local = LOCAL(data_li=res)
                 write_res = ins_local.write_data_local()

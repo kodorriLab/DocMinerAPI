@@ -32,3 +32,6 @@ urlpatterns = [
     path(r'api_docminer/', include('api_docminer.urls')),
     path(r'api_database/', include('api_database.urls')),
 ]
+
+
+

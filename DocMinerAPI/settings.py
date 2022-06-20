@@ -93,11 +93,8 @@ SQLITE_CONFIG_DEV = {
 HDFS_CONFIG_PROD = {
     "con":
         {
-            'host': '203.254.190.23',
-            'port': '20022',
-            'user': 'nrc',
-            'password': 'Admin123@#$_!',
-            'database': '',
+            'client': 'http://hmng1:17777',
+            'write_bas_path': '/api_test/'
         },
 }
 ################# DJANGO 기본 세팅 관리 ##########################
